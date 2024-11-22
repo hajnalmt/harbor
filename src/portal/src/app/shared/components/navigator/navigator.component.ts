@@ -152,8 +152,7 @@ export class NavigatorComponent implements OnInit {
                     config.auth_mode === 'ldap_auth' ||
                     config.auth_mode === 'uaa_auth' ||
                     config.auth_mode === 'oidc_auth'
-                )) ||
-                (user.user_id === 1 && user.username === 'admin'))
+                )))
         );
     }
 
